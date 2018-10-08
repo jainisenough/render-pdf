@@ -45,6 +45,6 @@ http_1.createServer((req, res) => {
     else {
         res.end('Incorrect method');
     }
-}).listen(3000, () => {
+}).listen(process.env.PORT || 3000, () => {
     console.log('Server fireup');
 });
